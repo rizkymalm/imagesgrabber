@@ -24,8 +24,8 @@ app.get("/:folder/:prdfilename", (req,res) => {
             var image = fs.readFileSync(path)
             res.send(image)
         }else{
-            // var image = fs.readFileSync(filesDir()+"/assets/errimage.png")
-            res.send(path)
+            var image = fs.readFileSync(filesDir()+"/assets/errimage.png")
+            res.send(image)
         }
 })
 
